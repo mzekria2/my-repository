@@ -1,0 +1,136 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #f9e5e1;
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #d7e5d5;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #d5e2e5;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #d5d7d7;
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Who I Am</h1>
+  <p>I am a Engineering student at Western University. 
+  I'm completing my bachelor's degree in software engineering.</p>
+</div>
+
+<h2 style="text-align:center">Facts</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="girll.jpg" style="width:100%">
+      <div class="container">
+        <h2>Personal Life</h2>
+        <p class="title">My past</p>
+        <p>I'm an international student from London, England. I have 3 siblings, 2 brothers and a sister.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card1">
+      <img src="study.jpg" style="width:100%">
+      <div class="container">
+        <h2>Student Life</h2>
+        <p class="title">Difficulties</p>
+        <p>Learning to balance and manage your time properly has been a key challenge in my years of being an Engineering student.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card2">
+      <img src="shark.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Extra Facts</h2>
+        <p class="title">100% true</p>
+        <p>I can swim as fast as a shark.</p>
+        <p>My email is m@example.com</p>
+        <a href="file:///C:/Users/MZ16/OneDrive/Desktop/Stuff/Documents/Class%20SE%202202/contactt.html.html"/>
+        <p><button class="contact">Contact</button></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
